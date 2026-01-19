@@ -222,14 +222,14 @@ body {
   pointer-events: none;
 }
 
-#quiz-button:not(:disabled):not(.disabled) {
+#quiz-button:not(:disabled):not(.disabled):not(.error) {
   background-color: #56C3EA;
   color: white;
   pointer-events: auto;
 }
 
 #quiz-button.error {
-  background-color: #ff0000;
+  background-color: #ff0000 !important;
   color: white;
   pointer-events: auto;
 }
