@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <title>Donuts Game</title>
+</head>
+<body>
+  <div id="game-scene">
+    <h1 id="game-title">Click on the donuts to pack a <span class="highlight">group of 2</span></h1>
+    
+    <div id="donuts-phase">
+      <div id="boxes-container">
+        <div class="box-wrapper">
+          <div class="box box-open" id="current-box">
+            <div class="box-lid"></div>
+          </div>
+        </div>
+      </div>
+      <div id="donuts-container"></div>
+    </div>
+
+    <div id="quiz-phase" class="hidden">
+      <div class="quiz-container">
+        <div class="quiz-row">
+          <p id="quiz-task">How many donuts in total?</p>
+          <input type="text" id="quiz-input" placeholder="">
+        </div>
+        <button id="quiz-button" disabled>Done</button>
+      </div>
+    </div>
+
+    <div id="click-lock-overlay" class="hidden"></div>
+  </div>
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>

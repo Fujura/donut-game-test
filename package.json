@@ -1,0 +1,17 @@
+{
+  "name": "donut-game",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {}
+}
